@@ -314,6 +314,8 @@ body {
 
 .top-creators-header {
     padding: 2rem;
+    justify-content: center;
+    text-align: center;
 }
 
 .top-creators-title {
@@ -329,7 +331,7 @@ body {
 
 .top-creators-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .top-creator-card {
@@ -340,6 +342,7 @@ body {
     padding: 25px;
     /*padding-right: 250px;*/
     display: flex;
+    margin: 50px;
 }
 
 .top-creator-pic-and-analytics {
