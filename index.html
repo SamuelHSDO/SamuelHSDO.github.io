@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indexstyles.css" type="text/css">
+    <script src="https://kit.fontawesome.com/8f5c13e1f9.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.globe.min.js"></script>
+    <title>TweetMe</title>
+</head>
+<body>
+    <div class="navbar-and-opening-container" id="vanta-selector">
+        <nav class="navbar">
+            <div class="brand-logo">
+                <a href="#"><img src="newlogo.svg" alt="Logo"  width="100px"></a>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <!--<div class="search-container">
+                <div class="search_wrap search_wrap_1">
+                    <div class="search_box">
+                        <input type="text" class="input" placeholder="Search For Creators...">
+                        <div class="btn btn_common">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Top Creators</a></li>
+                    <li><a href="#">Find Creators</a></li>
+                    <li><a href="#">Log in as a Creator</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="opening-message-container">
+            <div class="left-message1-container">
+                <h1 class="about-intro">Influencer marketing made <span class="easy-word">easy</span></h1>
+            </div>
+            <div class="left-message2-container">
+                <p class="about-message">Find prominent and well-respected influencers who are ready to take your product, company, or identity to the next level.</p>
+                <hr class="about-divider">
+            </div>
+        </div>
+    </div>
+
+    <!--////////////////  END OF NAVBAR AND OPENING ELEMENTS  ////////////////-->
+
+    <div class="creator-welcome-holder">
+        <div class="creator-welcome-words-holder">
+            <h1 class="creator-welcome-header">Creators</h1>
+            <p class="creator-welcome-message-question">Are you looking to expand your clientele?</p>
+            <p class="creator-welcome-message">Well look no further and join the ultimate promotional contenet platform that provides you with a direct pathway to potential partnerships.</p>
+        </div>
+        <div class="login-now">
+            <button class="login-btn">Login as a Creator</button>
+            <span class="login-info">With your Twitter account via Auth0</span>
+        </div>
+    </div>
+
+    <!--////////////////  END OF CREATOR WELCOME ELEMENTS  ////////////////-->
+
+    <div class="top-creators-holder">
+        <div class="top-creators-header">
+            <h1 class="top-creators-title">This month's top creators &#128293;</h1>
+        </div>
+        <div class="top-creator-cards-holder">
+            <div class="top-creators-row">
+                <div class="top-creator-card">
+                    <div class="top-creator-pic-and-analytics">
+                        <div class="creator-pic">
+                            <img src="1ethryan.jpg" alt="">
+                        </div>
+                        <div class="top-creator-analytics-holder">
+                            <p class="top-creator-analytics">+1.2K</p>
+                            <p class="top-creator-analytics-tag">Followers</p>
+                            <p class="top-creator-analytics">+250K</p>
+                            <p class="top-creator-analytics-tag">Impressions</p>
+                        </div>
+                    </div>
+                    <div class="top-creator-name-and-btn">
+                        <a href="#" class="top-creator-name">@1ethryan</a>
+                        <p class="top-creator-followers">5.7K</p>
+                        <button class="top-creator-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="top-creator-card">
+                    <div class="top-creator-pic-and-analytics">
+                        <div class="creator-pic">
+                            <img src="1ethryan.jpg" alt="">
+                        </div>
+                        <div class="top-creator-analytics-holder">
+                            <p class="top-creator-analytics">+1.2K</p>
+                            <p class="top-creator-analytics-tag">Followers</p>
+                            <p class="top-creator-analytics">+250K</p>
+                            <p class="top-creator-analytics-tag">Impressions</p>
+                        </div>
+                    </div>
+                    <div class="top-creator-name-and-btn">
+                        <a href="#" class="top-creator-name">@1ethryan</a>
+                        <p class="top-creator-followers">5.7K</p>
+                        <button class="top-creator-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        VANTA.GLOBE({
+          el: "#vanta-selector",
+          mouseControls: false,
+          touchControls: false,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xF5F9E9,
+          backgroundColor: 0xffffff,
+        })
+        </script>
+    <script type="text/javascript" src="js/dropdownmenu.js"></script>
+    <script type="text/javascript" src="js/responsivenavbar.js" defer></script>
+</body>
+</html>
